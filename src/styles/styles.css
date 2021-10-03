@@ -1,0 +1,79 @@
+@import url("/src/styles/bootstrap.css");
+* {
+  font-family: monospace;
+  font-size: 20px;
+}
+body {
+  background-color: rgba(255, 255, 7, 0.171);
+
+  animation: fade-to-left 4s ease;
+}
+
+nav a {
+  padding: 30px;
+  color: black !important;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: cornflowerblue !important;
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  list-style: none;
+}
+
+.howto {
+  text-align: center;
+}
+
+.howto ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer a:hover {
+  color: cornflowerblue !important;
+  text-decoration: underline;
+}
+
+@keyframes fade-to-left {
+  0% {
+    position: relative;
+    left: -2000px;
+    opacity: 0;
+  }
+
+  50% {
+    position: relative;
+    left: 500px;
+    opacity: 0.5;
+  }
+
+  75% {
+    position: relative;
+    left: 0;
+    opacity: 0.75;
+  }
+
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
